@@ -8,13 +8,13 @@
 //   opacity: jekyll-config('avatar.opacity') is a 'unit' ? jekyll-config('avatar.opacity') : 1;
 }
 
-if jekyll-config('avatar.rounded') {
+@if jekyll-config('avatar.rounded') {
 .site-author-image {
   border-radius: 100%;
 }
 }
 
-if jekyll-config('avatar.rotated') {
+@if jekyll-config('avatar.rotated') {
 .site-author-image {
   -webkit-transition: -webkit-transform 1.0s ease-out;
   -moz-transition: -moz-transform 1.0s ease-out;
