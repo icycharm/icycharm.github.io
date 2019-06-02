@@ -233,7 +233,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /uploads/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -277,7 +277,7 @@ sidebar:
   b2t: true
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
