@@ -8,7 +8,7 @@
 
 @import "back-to-top-sidebar";
 @import "back-to-top";
-@if jekyll-config('sidebar.b2t') {
+@if jekyll-config('back2top.sidebar') {
   @include back-to-top-sidebar;
 }
 @else {
