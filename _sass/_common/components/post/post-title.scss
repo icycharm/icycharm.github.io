@@ -1,5 +1,5 @@
 .posts-expand .post-title {
-  font-size: $font-size-headings-base;
+  font-size: 26px;
   text-align: center;
   word-break: break-word;
   font-weight: $posts-expand-title-font-weight;
@@ -11,7 +11,7 @@
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: $black-dim;
+  color: $black-light;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
