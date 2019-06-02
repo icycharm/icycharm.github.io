@@ -326,7 +326,7 @@ post_wordcount:
 
 # Wechat Subscriber
 wechat_subscriber:
-  enabled: true
+  enabled: false
   qcode: /uploads/wechat-qcode.jpg #/path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
   description: 订阅我的公众号
 
@@ -545,7 +545,7 @@ busuanzi_count:
   site_pv_footer:
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-eye"></i>
+  page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
 
