@@ -273,10 +273,11 @@ sidebar:
   offset: 12
   offset_float: 0
 
-  # Back to top in sidebar
-  b2t: false
-
-  # Scroll percent label in b2t button
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: false
+  # Scroll percent label in b2t button.
   scrollpercent: true
 
 
