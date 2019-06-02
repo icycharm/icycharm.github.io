@@ -87,7 +87,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2015
 
 # icon between year and author @Footer
 authoricon: heart
@@ -142,6 +142,7 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  comment: comment
 
 
 
@@ -213,8 +214,8 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  #留言板: https://support.qq.com/product/57508
 
 
 # Social Links Icons
@@ -229,6 +230,8 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  留言板: comment
+  公众号: weixin
 
 
 # Sidebar Avatar
@@ -281,11 +284,11 @@ sidebar:
 
 
 # Blog rolls
-links_title: Links
+links_title: 链接
 #links_layout: block
 links_layout: inline
 links:
-  Title: http://example.com/
+  两个有意思的: https://dxq520.cn/
 
 
 # ---------------------------------------------------------------
@@ -407,7 +410,7 @@ wildfire:
     siteId:
   # other configs
   theme: light # or dark
-  locale: en # or other locales, e.g. zh-CN
+  locale: zh-CN # or other locales, e.g. zh-CN
   defaultAvatarURL: 
 # Any question? 
 # Raise an issue here: https://github.com/cheng-kang/wildfire/issues
@@ -687,6 +690,10 @@ vendors:
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
   fontawesome:
+
+  # 阿里图标库
+  # See: https://www.iconfont.cn/
+  iconfont: //at.alicdn.com/t/font_1128645_auqtxb57isn.css
 
   # Internal version: 1
   # https://www.algolia.com
