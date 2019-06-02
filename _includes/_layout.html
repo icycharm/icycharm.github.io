@@ -53,14 +53,14 @@
       </div>
     </footer>
 
-    {% if site.back2top.enable and not site.back2top.sidebar %}
+    {% unless site.sidebar.b2t %}
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
-        {% if site.back2top.scrollpercent %}
+        {% if site.sidebar.scrollpercent %}
           <span id="scrollpercent"><span>0</span>%</span>
         {% endif %}
       </div>
-    {% endif %}
+    {% endunless %}
 
   </div>
 
