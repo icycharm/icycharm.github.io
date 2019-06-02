@@ -2,8 +2,11 @@
 title: 【Mac漫画阅读器】【Simple Comic 1.7.1 汉化版】
 date: 2018-12-12 07:56:29
 updated: 2018-12-12 07:56:29
+comments: true
 categories: [App, Mac]
 tags: [Simple Comic, Mac]
+author: "墨问非名"
+toc: true
 ---
 
 我……终于想起开源软件是公开代码可以自己编译的了。
