@@ -1,0 +1,155 @@
+---
+layout: page
+title: ABOUT
+description: "Hi, this is Lin, nice to meet you."
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英语 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <blockquote>
+       生命不止，折腾不息
+    </blockquote>
+
+    <h3>Why blog?</h3>
+    <hr>
+    <p>人生太精彩，我想用博客记录生活中的点滴。
+
+    本博客自2016年12月7日起开始运行至今，共35篇文章，总字数 
+    {% assign count = 0 %}
+   {% for post in site.posts %}
+    {% assign single_count = post.content | strip_html | strip_newlines | size %}
+    {% assign count = count | plus: single_count %}
+    {% endfor %}
+
+   {% if count > 10000 %}
+    {{ count | divided_by: 10000 }} 万 {{ count | modulo: 10000 }}
+{% else %}
+    {{ count }}
+{% endif %}
+。</p>
+
+    <h3>Me</h3>
+    <p>一只蒟蒻的前端小菜鸟，也许这一辈子都会是吧</p>
+    <p> &nbsp;<i class="fa fa-spin fa-star" aria-hidden="true" style="color:#0085A1"></i>&nbsp;爱自由，</p>
+    <p>不喜欢被束缚，热衷于想做的事，别人爱说就说去吧，做好自己呗</p>
+    <p> &nbsp;<i class="fa fa-spin fa-star" aria-hidden="true" style="color:#0085A1"></i>&nbsp;爱旅游，</p>
+    <p>读万卷书，我读过得书很少；行万里路，世界这么大，我去过的地方也太少</p>
+    <p> &nbsp;<i class="fa fa-spin fa-star" aria-hidden="true" style="color:#0085A1"></i>&nbsp;爱倾听，</p>
+    <p>在倾听中也许会帮到别人更重要的是可以认真反省自己</p>
+
+  
+
+    <h3>Thanks</h3>
+    <hr>
+    <p>本博客的主题来自<a href="http://huangxuan.me/" target="_blank">Hux</a>同学，很喜欢这种简单明快的风格。另外得感谢jekyll、github pages，当然还要感谢Font Awesome提供这么方便的icon。</p>
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote>
+        Everyone should have a dream.<br>Once you have a dream and believe in it. Nothing can stop you!!! 
+    </blockquote>
+    
+    <p>Hi, I am Ling used to be an International Hospitality and Tourism Management student at Bournemouth University. And now working as a FM helpdesk analyst at <a href="https://www.kaust.edu.sa/en" target="_blank">KAUST</a></p>
+
+    <p>I am always keen to learn new things and broaden my horizon.So, I never regret trying. Hope one day my dream come true.</p>
+
+    <p>The Meaning Of My Name:
+
+    <img src="{{ site.baseurl }}/img/Lin-meaning.jpg">
+    </p>
+
+    <p style="text-align:right;">
+    -- From <a href="http://www.urbandictionary.com/define.php?term=Lin" target="_blank">Urban Dictionary</a>
+    </p>
+
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+<div class="comment">
+    <div class="ds-thread"
+    {% if site.duoshuo_username == "huxblog" %}
+        data-thread-id="1187623191091085319"
+    {% else %}
+        data-thread-key="{{site.duoshuo_username}}/about"
+    {% endif %}
+
+    data-title="{{page.title}}"
+    data-url="{{site.url}}/about/"></div>
+</div>
+<!-- 多说评论框 end -->
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
+
+
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}

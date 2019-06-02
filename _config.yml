@@ -1,0 +1,99 @@
+# Welcome to Jekyll!
+
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Ling's Blog
+SEOTitle:  Ling Lin | Ling's Blog
+header-img: img/home-bg.jpg
+email: linglinyp@163.com
+description: "欢迎来到我的个人博客"
+keywords: "Ling Lin, Lin Ling, 博客，前端，IT，网页设计，随笔"
+baseurl: ""
+url: "http://linglinyp.com"
+
+
+# Author 
+author: "Ling Lin"
+
+# SNS settings
+# github_username:  "lingLinyp"
+# facebook_username: "linglinyp"
+weibo_username: "lingLinyp"
+# linkedin_username: "linglinyp"
+
+
+
+# Comments   
+disqus_username: linglinyp
+
+
+# Build settings
+# permalink: pretty
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+theme: minima
+gems: [jekyll-paginate]
+
+paginate: 8
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "人生太短，世界又这么大，我想留下属于自己的足迹"
+sidebar-avatar: /img/avatar-ling.jpg  
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 2da173f5cd6d257eaf32e843dca68895
+# Google Analytics
+ga_track_id: 'UA-98278066-1'            # Format: UA-xxxxxx-xx
+ga_domain: linglinyp.com
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1
+
+
+# Friends
+friends: [
+    {
+        title: "咕咚",
+        href: "http://gudong.name/"
+    },{
+        title: "Lusheep",
+        href: "http://lusheep.me/"
+    },{
+        title: "晨风明悟",
+        href: "http://www.cfmwsc.cn/"
+    },{
+        title: "VeryNice",
+        href: "http://very9s.net/"
+    },{
+        title: "HyG",
+        href: "https://gaohaoyang.github.io/?from=inf&wvr=5&loc=infblog"
+    },{
+       title: "雷全的个人网站",
+       href: "https://leiquan.website/"
+    
+     },{
+       title: "Yipeng Qin",
+       href: "http://yipengqin.com/"
+    
+     },{
+       
+       title: "Secret Blog",
+       href: "https://blog.isecret.vip/"
+     }
+
+]
