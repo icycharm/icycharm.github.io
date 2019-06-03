@@ -193,6 +193,7 @@
                   <span id="url::{{ post.url | absolute_url }}" class="cy_cmt_count" data-xid="{{ post.url }}" itemprop="commentsCount" ></span>
                 </a>
               {% endif %}
+			  </span>
             {% endif %}
           {% endif %}
 
@@ -289,6 +290,7 @@
         </div>
       {% endif %}
 
+  <div>
       {% if is_index %}
         {% if post.description and site.excerpt_description %}
           {{ post.description }}
